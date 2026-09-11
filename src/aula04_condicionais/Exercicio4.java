@@ -43,8 +43,26 @@ public class Exercicio4 {
         } else if (quantidadeDias <= 0) {
             System.out.println("quantidade de dias não pode ser negativa.");
         } else {
-            double valorTotal = quantidadeSolicitada * valorDiaria * quantidadeDias;
-            System.out.println("Valor total da locação: R$ " + valorTotal);
         }
-    }
-}
+            double valorTotal = quantidadeSolicitada * valorDiaria * quantidadeDias;
+
+            int estoqueRestante = quantidadeEstoque - quantidadeSolicitada;
+
+            System.out.println("===== RESULTADO DA LOCAÇÃO =====");
+            System.out.println("Locação aprovada!");
+            System.out.println("Cliente: " + nomeCliente);
+            System.out.println("Produto: " + nomeProduto);
+            System.out.println("Valor total: R$ " + valorTotal);
+            System.out.println("Estoque restante: " + estoqueRestante);
+
+            if (valorTotal >= 1000) {
+                System.out.println("Classificação: valor alto");
+            } else if (valorTotal >= 500) {
+                System.out.println("Classificação: valor médio");
+            } else {
+                System.out.println("Classificação: valor baixo");
+            }
+        }
+        }
+
+
