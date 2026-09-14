@@ -18,8 +18,6 @@ public class ExemploWhile {
 
         System.out.println("Quantidade válida: " + quantidadeSolicitada);
 
-
-
         /*while (contador <= 3) {
             System.out.println("Repetição: " + contador);
             contador++;
